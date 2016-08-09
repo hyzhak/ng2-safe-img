@@ -4,7 +4,7 @@ safe img for Angular 2
 Just consist from one structural directive - ** *src **. 
 And should be used with with <img/>: 
 
-```javascript
+```html
 <img *src="item.uri"/>
 ```
 
@@ -15,7 +15,7 @@ Lets explain how does it work through example.
 
 Here how should we use it 
 
-```javascript
+```html
 <img *src="item.uri"/>
 ```
 
