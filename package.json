@@ -2,7 +2,7 @@
   "name": "ng2-safe-img",
   "version": "0.1.0",
   "description": "safe img for Angular 2",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/hyzhak/ng2-safe-img#readme",
   "peerDependencies": {
+    "@angular/common": "2.0.0-rc.5",
     "@angular/core": "2.0.0-rc.5"
   }
 }
