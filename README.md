@@ -1,5 +1,5 @@
 # ng2-safe-img
-safe img for Angular 2
+very tiny and safe img for Angular 2
 
 Just consist from one structural directive - ** *src **. 
 And should be used with with <img/>: 

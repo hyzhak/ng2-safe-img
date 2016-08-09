@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/hyzhak/ng2-safe-img/issues"
   },
-  "homepage": "https://github.com/hyzhak/ng2-safe-img#readme"
+  "homepage": "https://github.com/hyzhak/ng2-safe-img#readme",
+  "peerDependencies": {
+    "@angular/core": "2.0.0-rc.5"
+  }
 }
