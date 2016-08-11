@@ -4,7 +4,7 @@
   "description": "safe img for Angular 2",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "karma start"
   },
   "repository": {
     "type": "git",
@@ -25,5 +25,43 @@
   "peerDependencies": {
     "@angular/common": "2.0.0-rc.5",
     "@angular/core": "2.0.0-rc.5"
+  },
+  "devDependencies": {
+    "@angular/common": "^2.0.0-rc.5",
+    "@angular/core": "^2.0.0-rc.5",
+    "@angular/platform-browser-dynamic": "^2.0.0-rc.5",
+    "@types/core-js": "^0.9.29",
+    "@types/jasmine": "^2.2.31",
+    "@types/node": "^6.0.32",
+    "@types/protractor": "^1.5.16",
+    "@types/source-map": "^0.1.26",
+    "@types/webpack": "^1.12.31",
+    "awesome-typescript-loader": "^2.1.1",
+    "codelyzer": "0.0.26",
+    "core-js": "^2.4.1",
+    "istanbul-instrumenter-loader": "^0.2.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^1.1.2",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-coverage": "^1.1.1",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-mocha-reporter": "^2.1.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^1.8.0",
+    "protractor": "^4.0.3",
+    "rxjs": "^5.0.0-beta.6",
+    "source-map-loader": "^0.1.5",
+    "ts-helpers": "^1.1.1",
+    "tslint": "^3.14.0",
+    "tslint-loader": "^2.1.5",
+    "typescript": "^2.0.0"
+  },
+  "dependencies": {
+    "@angular/compiler": "^2.0.0-rc.5",
+    "@angular/platform-browser": "^2.0.0-rc.5",
+    "rxjs": "^5.0.0-beta.6",
+    "webpack": "^1.13.1",
+    "zone.js": "^0.6.12"
   }
 }
