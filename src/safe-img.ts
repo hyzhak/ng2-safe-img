@@ -1,7 +1,7 @@
 import { Directive, Input, TemplateRef, ViewContainerRef } from '@angular/core';
 import { isBlank } from '@angular/common/src/facade/lang';
 
-@Directive({ selector: '[src]' })
+@Directive({ selector: '[safeSrc]' })
 export class SafeImg {
   private _prevCondition: boolean = null;
 
@@ -9,7 +9,7 @@ export class SafeImg {
   }
 
   @Input()
-  set src(newCondition: any) {
+  set safeSrc(newCondition: any) {
     if (newCondition && (isBlank(this._prevCondition) || !this._prevCondition)) {
       this._prevCondition = true;
       const res = this._viewContainer.createEmbeddedView(this._templateRef);
