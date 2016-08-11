@@ -1,5 +1,5 @@
-import {Directive, Input, TemplateRef, ViewContainerRef} from '@angular/core';
-import {isBlank} from '@angular/common/src/facade/lang';
+import { Directive, Input, TemplateRef, ViewContainerRef } from '@angular/core';
+import { isBlank } from '@angular/common/src/facade/lang';
 
 @Directive({ selector: '[src]' })
 export class SafeImg {
