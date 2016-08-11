@@ -7,7 +7,7 @@ describe('safe-img', () => {
     @Component({
         selector: 'test-comp',
         directives: [SafeImg],
-        template: '<img *src="image" class="img"/>',
+        template: '<img *safeSrc="image" class="img"/>',
     })
     class HostComponentWithoutImageSource {
         @Input() public image: string = null;
@@ -16,9 +16,21 @@ describe('safe-img', () => {
     @Component({
         selector: 'test-comp',
         directives: [SafeImg],
-        template: '<img *src="image" class="img"/>',
+        template: '<img *safeSrc="image" class="img"/>',
     })
     class HostComponentWithImageSource {
+        @Input() public image: string = 'some-url.png';
+    }
+
+    @Component({
+        selector: 'test-comp',
+        directives: [SafeImg],
+        template: `
+            <img *safeSrc="image" class="img1"/>
+            <img src="some-other-url.png" class="img2"/>
+        `,
+    })
+    class WithRegularImg {
         @Input() public image: string = 'some-url.png';
     }
 
@@ -29,6 +41,7 @@ describe('safe-img', () => {
             declarations: [
                 HostComponentWithoutImageSource,
                 HostComponentWithImageSource,
+                WithRegularImg,
                 SafeImg,
             ],
         });
@@ -50,5 +63,14 @@ describe('safe-img', () => {
             const img = fixture.debugElement.query(By.css('img'));
             expect(img).not.toBeNull();
         });
+    }));
+
+    it('should not collide with regular img src attribute', async(() => {
+        TestBed.createComponent(WithRegularImg);
+        // fixture.detectChanges();
+        // fixture.whenStable().then(() => {
+        //     const img = fixture.debugElement.query(By.css('img'));
+        //     expect(img).not.toBeNull();
+        // });
     }));
 });
