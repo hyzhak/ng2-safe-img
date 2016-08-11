@@ -5,7 +5,7 @@ Just consist from one structural directive - `*src`.
 And should be used with with <img/>: 
 
 ```html
-<img *src="item.uri"/>
+<img *safeSrc="item.uri"/>
 ```
 
 
@@ -16,7 +16,7 @@ Lets explain how does it work through example.
 Here how should we use it 
 
 ```html
-<img *src="item.uri"/>
+<img *safeSrc="item.uri"/>
 ```
 
 if <item.uri> equal to 'https://placekitten.com/200/300'
@@ -35,6 +35,6 @@ we will get
 }-->
 ```
 
-so no any html elements will be there. What save us from seeing something like this:
+so no any html elements will be there. What saves us from seeing something like this:
 
 ![unsafe img with undefined uri](unsafe-img-with-undefined-uri)
