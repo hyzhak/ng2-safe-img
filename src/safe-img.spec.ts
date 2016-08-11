@@ -24,7 +24,7 @@ describe('safe-img', () => {
 
     let fixture;
 
-    beforeEach(async(() => {
+    beforeEach(() => {
         TestBed.configureTestingModule({
             declarations: [
                 HostComponentWithoutImageSource,
@@ -32,7 +32,7 @@ describe('safe-img', () => {
                 SafeImg,
             ],
         });
-    }));
+    });
 
     it('should hide <img/> if src was not defined', async(() => {
         fixture = TestBed.createComponent(HostComponentWithoutImageSource);
