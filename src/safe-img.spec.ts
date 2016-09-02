@@ -1,12 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { async, TestBed } from '@angular/core/testing';
-import {By} from '@angular/platform-browser';
-import { SafeImg } from '../';
+import { By } from '@angular/platform-browser';
+import { SafeImgModule } from '../';
 
 describe('safe-img', () => {
     @Component({
         selector: 'test-comp',
-        directives: [SafeImg],
         template: '<img *safeSrc="image" class="img"/>',
     })
     class HostComponentWithoutImageSource {
@@ -15,7 +14,6 @@ describe('safe-img', () => {
 
     @Component({
         selector: 'test-comp',
-        directives: [SafeImg],
         template: '<img *safeSrc="image" class="img"/>',
     })
     class HostComponentWithImageSource {
@@ -24,7 +22,6 @@ describe('safe-img', () => {
 
     @Component({
         selector: 'test-comp',
-        directives: [SafeImg],
         template: `
             <img *safeSrc="image" class="img1"/>
             <img src="some-other-url.png" class="img2"/>
@@ -38,11 +35,11 @@ describe('safe-img', () => {
 
     beforeEach(() => {
         TestBed.configureTestingModule({
+            imports: [SafeImgModule],
             declarations: [
                 HostComponentWithoutImageSource,
                 HostComponentWithImageSource,
                 WithRegularImg,
-                SafeImg,
             ],
         });
     });

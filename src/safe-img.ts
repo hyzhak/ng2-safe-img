@@ -1,4 +1,5 @@
-import { Directive, Input, TemplateRef, ViewContainerRef } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { NgModule, Directive, Input, TemplateRef, ViewContainerRef } from '@angular/core';
 import { isBlank } from '@angular/common/src/facade/lang';
 
 @Directive({ selector: '[safeSrc]' })
@@ -19,4 +20,13 @@ export class SafeImg {
       this._viewContainer.clear();
     }
   }
+}
+
+
+@NgModule({
+  imports: [CommonModule],
+  declarations: [SafeImg],
+  exports: [SafeImg],
+})
+export class SafeImgModule {
 }

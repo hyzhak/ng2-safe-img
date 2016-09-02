@@ -1,7 +1,7 @@
 # ng2-safe-img [![Build Status](https://travis-ci.org/hyzhak/ng2-safe-img.svg?branch=develop)](https://travis-ci.org/hyzhak/ng2-safe-img)
 very tiny and safe img for Angular 2
 
-Just consist from one structural directive - `*src`. 
+Just consist from one structural directive - `*safeSrc`. 
 And should be used with with <img/>: 
 
 ```html
