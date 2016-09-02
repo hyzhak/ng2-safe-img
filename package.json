@@ -1,6 +1,6 @@
 {
   "name": "ng2-safe-img",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "safe img for Angular 2",
   "main": "index.ts",
   "scripts": {
