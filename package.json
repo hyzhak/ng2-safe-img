@@ -23,26 +23,26 @@
   },
   "homepage": "https://github.com/hyzhak/ng2-safe-img#readme",
   "peerDependencies": {
-    "@angular/common": "2.0.0-rc.5",
-    "@angular/core": "2.0.0-rc.5"
+    "@angular/common": "2.0.0-rc.6",
+    "@angular/core": "2.0.0-rc.6"
   },
   "devDependencies": {
-    "@angular/common": "^2.0.0-rc.5",
-    "@angular/core": "^2.0.0-rc.5",
-    "@angular/platform-browser-dynamic": "^2.0.0-rc.5",
+    "@angular/common": "^2.0.0-rc.6",
+    "@angular/core": "^2.0.0-rc.6",
+    "@angular/platform-browser-dynamic": "^2.0.0-rc.6",
     "@types/core-js": "^0.9.29",
     "@types/jasmine": "^2.2.31",
-    "@types/node": "^6.0.32",
+    "@types/node": "^6.0.38",
     "@types/protractor": "^1.5.16",
     "@types/source-map": "^0.1.26",
     "@types/webpack": "^1.12.31",
     "awesome-typescript-loader": "^2.1.1",
-    "codelyzer": "0.0.26",
+    "codelyzer": "0.0.28",
     "core-js": "^2.4.1",
     "istanbul-instrumenter-loader": "^0.2.0",
     "jasmine-core": "^2.4.1",
-    "karma": "^1.1.2",
-    "karma-chrome-launcher": "^1.0.1",
+    "karma": "^1.2.0",
+    "karma-chrome-launcher": "^2.0.0",
     "karma-coverage": "^1.1.1",
     "karma-firefox-launcher": "^1.0.0",
     "karma-jasmine": "^1.0.2",
@@ -50,18 +50,19 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^1.8.0",
     "protractor": "^4.0.3",
-    "rxjs": "^5.0.0-beta.6",
+    "rxjs": "^5.0.0-beta.11",
     "source-map-loader": "^0.1.5",
     "ts-helpers": "^1.1.1",
     "tslint": "^3.14.0",
     "tslint-loader": "^2.1.5",
-    "typescript": "^2.0.0"
+    "typescript": "2.0.0"
   },
   "dependencies": {
-    "@angular/compiler": "^2.0.0-rc.5",
-    "@angular/platform-browser": "^2.0.0-rc.5",
+    "@angular/compiler": "^2.0.0-rc.6",
+    "@angular/platform-browser": "^2.0.0-rc.6",
     "rxjs": "^5.0.0-beta.6",
-    "webpack": "^1.13.1",
-    "zone.js": "^0.6.12"
+    "webpack": "^2.1.0-beta.21",
+    "webpack-dev-middleware": "^1.6.1",
+    "zone.js": "^0.6.17"
   }
 }
